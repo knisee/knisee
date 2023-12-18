@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    border: 0;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*variables*/
+:root {
+    --brownishred: hsla(51, 33%, 28%, 0.5);
+}
+
+/*body*/
+body {
+    background-image: url(3422930.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 850px;
+}
+
+.div1{
+    border: 1px solid black;
+    background-color: var(--brownishred);
+}
+
+/*div and nav*/
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+nav > ul >li, nav > ul >li > a {
+    display: inline;
+    color: azure;
+    margin: 20px;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+/*article*/
+.Mheader {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 1px;
+    border-radius: 6px;
+    width: 300px;
+    padding: 6px;
+}
+
+article {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+article > aside {
+    border: 1px solid black;
+    padding: 30px;
+    width: 300px;
+    height: 700px;
+    background-color: var(--brownishred);
+    border-radius: 1pc;
+    color: azure;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.aside > img {
+    border: 10px solid black;
+    border-radius: 6px;
+}
+
+.aside > div > p {
+    padding: 10px 5px;
+}
+
+article > section {
+    display: flex;
+    flex-direction: column;
+    flex: 0.9;
+}
+
+article > section > div:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--brownishred);
+    color: azure;
+    border: 1px solid black;
+    border-radius: 1pc;
+    padding: 20px 30px;
+    height: 120px;
+    position: relative;
+    margin: 20px;
+}
+
+article > section > div:nth-child(2) {
+    background-color: var(--brownishred);
+    color: azure;
+    border: 1px solid black;
+    border-radius: 1pc;
+    padding: 30px;
+    display: block;
+    height: 450px;
+    margin: 20px;
+}
+
+#WorkExp {
+    display: flex;
+    justify-content: center;
+}
+
+.WorkExpItems {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+tr > td {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1cap;
+    margin: 20px;
+    height: 400px;
+    background-color: hsla(50, 88%, 6%, 0.5);
+}

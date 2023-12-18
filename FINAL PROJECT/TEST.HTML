@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data into Table Columns with JavaScript</title>
+</head>
+<body>
+
+<table border="1" id="myTable">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td id="row1col1">Row 1, Column 1</td>
+        <td id="row1col2">Row 1, Column 2</td>
+        <td id="row1col3">Row 1, Column 3</td>
+    </tr>
+    <tr>
+        <td id="row2col1">Row 2, Column 1</td>
+        <td id="row2col2">Row 2, Column 2</td>
+        <td id="row2col3">Row 2, Column 3</td>
+    </tr>
+</table>
+
+<button onclick="inputData()">Input Data</button>
+
+<script>
+    function inputData() {
+        // Get a reference to the table
+        var table = document.getElementById("myTable");
+
+        // Specify the row and column indices where you want to input data
+        var rowIndex = 1; // Index of the row (0-based)
+        var colIndex = 2; // Index of the column (0-based)
+
+        // Get the cell using the row and column indices
+        var cell = table.rows[rowIndex].cells[colIndex];
+
+        // Input data into the cell
+        var newData = prompt("Enter new data:");
+        cell.innerHTML = newData;
+    }
+</script>
+
+</body>
+</html>

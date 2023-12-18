@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    border: 0;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*variables*/
+:root {
+    --brownishred: hsla(51, 33%, 28%, 0.5);
+}
+
+/*body*/
+body {
+    background-image: url(3422930.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 850px;
+}
+
+.div1 {
+    border: 1px solid black;
+    background-color: var(--brownishred);
+}
+
+/*div and nav*/
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+nav > ul >li, nav > ul >li > a {
+    display: inline;
+    color: azure;
+    margin: 20px;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+/*article*/
+article {
+    margin: 50px;
+    margin-top: 20px;
+    justify-content: space-around;
+    border: 1px;
+    border-radius: 1cap;
+    padding: 20px;
+    background-color: var(--brownishred);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: hsla(50, 88%, 6%, 0.5);
+}
+
+.div2 > p {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.divs {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 20px;
+    background-color: hsla(50, 88%, 6%, 0.5);
+}
+
+.divs > h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tables {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.tables > thead {
+    display: block;
+}
+
+.tables > tbody > tr > td  {
+    border: 1px solid rgba(238, 217, 25, 0.432);
+    border-radius: 5px;
+    padding: 2px;
+    background-color: hsla(216, 87%, 6%, 0.5);
+}
+
+.h4s {
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: black;
+    margin: 10px 400px;
+    padding: 4px;
+    font-family: cursive;
+}
+
+#seePictures {
+    background-color: black;
+    margin: 20px 500px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    border-radius: 6px;
+}
+
+#imageDiv {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 20px 10px;
+    display: none;
+    justify-content: space-evenly;
+}
